@@ -13,7 +13,7 @@ async function getData() {
         const data = await response.json()
         const randomIndex = Math.floor(Math.random() * data.length)
         const country = data[randomIndex]
-
+        console.log(country.name.common)
         state = {
             country: country.name.common,
             flag: country.flags.png
@@ -72,6 +72,9 @@ const kihagyas_gomb = document.querySelector('#kihagyas')
 kihagyas_gomb.addEventListener('click', (e) => {
     KihagyasvoltE = true
     probak++
+    if (probak >= 25) {
+        playerTry()
+    }
     tipp.value = ''
     probakSzama.innerHTML = probak
     getData()
