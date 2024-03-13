@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="/icons8-hungary-48.png" type="image/x-icon">
+    <title>Flag Guessr - Játék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrapper">
+        <h1 class="gradient-text">Flag Guessr</h1>
+        <nav>
+            <a href="/index.html">Kezdőlap</a>
+            <a href="oldalrol.html">Oldalról</a>
+        </nav>
+    </header>
+
+    <div class="pontszam">
+        <p>Próbák száma: <span id="proba">0</span>/25</p>
+        <p>Pontszám: <span id="pont">0</span>/25</p>
+        <p id="tippEredmeny">sdsad</p>
+    </div>
+    <main class="main_wrapper">
+        <div id="flag_img">
+
+        </div>
+        <div class="main_form">
+            <span><strong>Tippelj!</strong></span>
+            <form>
+                <input type="text" name="tipp" id="tipp">
+            </form>
+        </div>
+        <div>
+            <button type="button" id="kihagyas">Kihagyás</button>
+        </div>
+    </main>
+    <div class="kezdes">
+        <button type="button" id="kezdes_gomb">Játék kezdése</button>
+    </div>
+
+    <div class="gameOver">
+        <h2>Gratulálunk!</h2>
+        <p>Pontszámod: <span id="vegPontszam"></span>/25</p>
+        <button type="button" class="vegeGombok" onclick="window.location.reload()">Új játék kezdése</button>
+        <a href="index.html" class="vegeGombok">Kilépés</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
