@@ -13,7 +13,7 @@ async function getData() {
         const data = await response.json()
         const randomIndex = Math.floor(Math.random() * data.length)
         const country = data[randomIndex]
-        console.log(country.name.common)
+        
         state = {
             country: country.name.common,
             flag: country.flags.png
